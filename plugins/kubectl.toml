@@ -1,0 +1,26 @@
+# A TOML plugin for proto:
+# https://moonrepo.dev/docs/proto/plugins#toml-plugin
+
+name = "kubectl"
+type = "cli"
+
+[platform.linux]
+download-file = "linux/{arch}/kubectl"
+
+[platform.macos]
+download-file = "darwin/{arch}/kubectl"
+
+[platform.windows]
+download-file = "windows/{arch}/kubectl.exe"
+
+[install]
+download-url = "https:/storage.googleapis.com/kubernetes-release/release/v{version}/bin/{download_file}"
+unpack = false
+
+[install.arch]
+aarch64 = "arm64"
+x86_64 = "amd64"
+
+[resolve]
+git-url = "https://github.com/kubernetes/kubectl"
+git-tag-pattern = "^(?:v|kubernetes-)(.*)$"

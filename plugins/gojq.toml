@@ -1,0 +1,28 @@
+# A TOML plugin for proto:
+# https://moonrepo.dev/docs/proto/plugins#toml-plugin
+
+name = "gojq"
+type = "cli"
+
+[platform.linux]
+archive-prefix = "gojq_v{version}_linux_{arch}"
+download-file = "gojq_v{version}_linux_{arch}.tar.gz"
+
+[platform.macos]
+archive-prefix = "gojq_v{version}_darwin_{arch}"
+download-file = "gojq_v{version}_darwin_{arch}.zip"
+
+[platform.windows]
+archive-prefix = "gojq_v{version}_windows_{arch}"
+download-file = "gojq_v{version}_windows_{arch}.zip"
+
+[install]
+unpack = true
+download-url = "https://github.com/itchyny/gojq/releases/download/v{version}/{download_file}"
+
+[install.arch]
+aarch64 = "arm64"
+x86_64 = "amd64"
+
+[resolve]
+git-url = "https://github.com/itchyny/gojq"

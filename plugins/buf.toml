@@ -1,0 +1,27 @@
+# A TOML plugin for proto:
+# https://moonrepo.dev/docs/proto/plugins#toml-plugin
+
+name = "buf"
+type = "cli"
+
+[platform.linux]
+download-file = "buf-Linux-{arch}"
+checksum-file = "sha256.txt"
+
+[platform.macos]
+download-file = "buf-Darwin-{arch}"
+checksum-file = "sha256.txt"
+
+[platform.windows]
+download-file = "buf-Windows-{arch}.exe"
+checksum-file = "sha256.txt"
+
+[install]
+checksum-url = "https://github.com/bufbuild/buf/releases/download/v{version}/{checksum_file}"
+download-url = "https://github.com/bufbuild/buf/releases/download/v{version}/{download_file}"
+
+[install.arch]
+aarch64 = "arm64"
+
+[resolve]
+git-url = "https://github.com/bufbuild/buf"
