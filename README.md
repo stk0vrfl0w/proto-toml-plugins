@@ -28,6 +28,7 @@ Refer to https://moonrepo.dev/docs/proto/tools#third-party for more information.
 * k9s - Kubernetes CLI To Manage Your Clusters In Style (https://github.com/derailed/k9s)
 * kubeconform - Kubernetes manifests validator (https://github.com/yannh/kubeconform)
 * kubectl - Kubernetes CLI Tool (https://github.com/kubernetes/kubectl)
+* skaffold - Kubernetes Development (https://github.com/GoogleContainerTools/skaffold)
 * sops - Secrets Operations (https://github.com/getsops/sops)
 * terragrunt - Terraform wrapper (https://github.com/gruntwork-io/terragrunt)
 * zig - Zig language & toolchain (https://github.com/ziglang/zig)

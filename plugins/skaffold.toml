@@ -1,0 +1,28 @@
+# A TOML plugin for proto:
+# https://moonrepo.dev/docs/proto/plugins#toml-plugin
+
+name = "skaffold"
+type = "cli"
+
+[platform.linux]
+download-file = "skaffold-linux-{arch}"
+checksum-file = "skaffold-linux-{arch}.sha256"
+
+[platform.macos]
+download-file = "skaffold-darwin-{arch}"
+checksum-file = "skaffold-darwin-{arch}.sha256"
+
+[platform.windows]
+download-file = "skaffold-windows-{arch}.exe"
+checksum-file = "skaffold-windows-{arch}.exe.sha256"
+
+[install]
+checksum-url = "https://github.com/GoogleContainerTools/skaffold/releases/download/v{version}/{checksum_file}"
+download-url = "https://github.com/GoogleContainerTools/skaffold/releases/download/v{version}/{download_file}"
+
+[install.arch]
+aarch64 = "arm64"
+x86_64 = "amd64"
+
+[resolve]
+git-url = "https://github.com/GoogleContainerTools/skaffold"
