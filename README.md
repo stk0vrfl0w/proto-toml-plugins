@@ -25,6 +25,8 @@ Refer to https://moonrepo.dev/docs/proto/tools#third-party for more information.
 * gojq - Go Implementation of jq (https://github.com/itchyny/gojq)
 * helm - Kubernetes Package Manager (https://github.com/helm/helm)
 * helmfile - Helm Chart Deployments (https://github.com/helmfile/helmfile)
+* k9s - Kubernetes CLI To Manage Your Clusters In Style (https://github.com/derailed/k9s)
+* kubeconform - Kubernetes manifests validator (https://github.com/yannh/kubeconform)
 * kubectl - Kubernetes CLI Tool (https://github.com/kubernetes/kubectl)
 * sops - Secrets Operations (https://github.com/getsops/sops)
 * terragrunt - Terraform wrapper (https://github.com/gruntwork-io/terragrunt)

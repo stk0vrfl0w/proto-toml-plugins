@@ -1,0 +1,28 @@
+# A TOML plugin for proto:
+# https://moonrepo.dev/docs/proto/plugins#toml-plugin
+
+name = "kubeconform"
+type = "cli"
+
+[platform.linux]
+download-file = "kubeconform-linux-{arch}.tar.gz"
+checksum-file = "CHECKSUMS"
+
+[platform.macos]
+download-file = "kubeconform-darwin-{arch}.tar.gz"
+checksum-file = "CHECKSUMS"
+
+[platform.windows]
+download-file = "kubeconform-windows-{arch}.zip"
+checksum-file = "CHECKSUMS"
+
+[install]
+unpack = true
+download-url = "https://github.com/yannh/kubeconform/releases/download/v{version}/{download_file}"
+
+[install.arch]
+aarch64 = "arm64"
+x86_64 = "amd64"
+
+[resolve]
+git-url = "https://github.com/yannh/kubeconform"
