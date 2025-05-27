@@ -5,9 +5,9 @@ name = "zig"
 type = "cli"
 
 [platform.linux]
-archive-prefix = "zig-linux-{arch}-{version}"
-download-file = "zig-linux-{arch}-{version}.tar.xz"
-checksum-file = "zig-linux-{arch}-{version}.tar.xz.minisig"
+archive-prefix = "zig-{arch}-linux-{version}"
+download-file = "zig-{arch}-linux-{version}.tar.xz"
+checksum-file = "zig-{arch}-linux-{version}.tar.xz.minisig"
 
 [platform.macos]
 archive-prefix = "zig-macos-{arch}-{version}"
