@@ -14,7 +14,7 @@ download-file = "darwin/{arch}/kubectl"
 download-file = "windows/{arch}/kubectl.exe"
 
 [install]
-download-url = "https:/storage.googleapis.com/kubernetes-release/release/v{version}/bin/{download_file}"
+download-url = "https://dl.k8s.io/release/v{version}/bin/{download_file}"
 unpack = false
 
 [install.arch]
